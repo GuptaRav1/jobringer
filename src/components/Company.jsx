@@ -1,40 +1,45 @@
 import React from "react";
+import {
+	COMPANY_LOGO1,
+	COMPANY_LOGO2,
+	COMPANY_LOGO3,
+} from "../utils/constants";
 
 const Company = () => {
 	return (
-		<div className="bg-slate-700 px-6 md:px-20 py-8">
-			<h2 className="font-semibold text-xl md:text-2xl mb-6 text-white text-center">
+		<div className="px-6 py-8 bg-slate-700 md:px-20">
+			<h2 className="mb-6 text-xl font-semibold text-center text-white md:text-2xl">
 				Our Trusted Recruiters
 			</h2>
-			<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center justify-center">
+			<div className="grid items-center justify-center grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-6">
 				<img
-					className="w-20 md:w-32 opacity-75 mx-auto"
-					src="public/company_logos/1.png"
+					className="w-20 mx-auto opacity-75 md:w-32"
+					src={COMPANY_LOGO1}
 					alt="Company Logo"
 				/>
 				<img
-					className="w-20 md:w-32 opacity-75 mx-auto"
-					src="public/company_logos/2.png"
+					className="w-20 mx-auto opacity-75 md:w-32"
+					src={COMPANY_LOGO2}
 					alt="Company Logo"
 				/>
 				<img
-					className="w-20 md:w-32 opacity-75 mx-auto"
-					src="public/company_logos/3.png"
+					className="w-20 mx-auto opacity-75 md:w-32"
+					src={COMPANY_LOGO3}
 					alt="Company Logo"
 				/>
 				<img
-					className="w-20 md:w-32 opacity-75 mx-auto"
-					src="public/company_logos/1.png"
+					className="w-20 mx-auto opacity-75 md:w-32"
+					src={COMPANY_LOGO1}
 					alt="Company Logo"
 				/>
 				<img
-					className="w-20 md:w-32 opacity-75 mx-auto"
-					src="public/company_logos/2.png"
+					className="w-20 mx-auto opacity-75 md:w-32"
+					src={COMPANY_LOGO2}
 					alt="Company Logo"
 				/>
 				<img
-					className="w-20 md:w-32 opacity-75 mx-auto"
-					src="public/company_logos/3.png"
+					className="w-20 mx-auto opacity-75 md:w-32"
+					src={COMPANY_LOGO3}
 					alt="Company Logo"
 				/>
 			</div>

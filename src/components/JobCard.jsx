@@ -1,8 +1,9 @@
 import React from "react";
 
 const JobCard = () => {
+	const tags = ["App", "Figma", "PSD"];
 	return (
-		<div className="p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow-md max-w-72">
+		<div className="p-6 mx-auto transition-transform duration-300 transform bg-white border border-gray-200 rounded-lg shadow-md max-w-72 hover:-translate-y-2">
 			<h2 className="text-lg font-semibold text-gray-800">Figma Designer</h2>
 
 			<div className="flex items-center mt-2 text-sm text-gray-500">
@@ -32,19 +33,17 @@ const JobCard = () => {
 			</p>
 
 			<div className="flex flex-wrap gap-2 mt-4">
-				<span className="px-3 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-full">
-					App
-				</span>
-				<span className="px-3 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-full">
-					Figma
-				</span>
-				<span className="px-3 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-full">
-					PSD
-				</span>
+				{tags.map((tag, index) => (
+					<span
+						key={index}
+						className="px-3 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-full">
+						{tag}
+					</span>
+				))}
 			</div>
 
 			<div className="mt-6">
-				<button className="px-4 py-2 text-sm font-semibold text-green-700 bg-green-100 rounded-lg hover:bg-green-200">
+				<button className="px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700">
 					Apply Now
 				</button>
 			</div>
